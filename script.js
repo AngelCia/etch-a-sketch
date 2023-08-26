@@ -1,4 +1,4 @@
-containerEl = document.getElementById("main");
+let containerEl = document.getElementById("main");
 
 function createAllDivs(num){
     for(let i = 0; i < num; i++){
@@ -17,7 +17,13 @@ function createInnerDivs(num, outerDiv){
     }
 }
 
+document.getElementById("gridSize").onclick = function(){
+    while (containerEl.firstChild) {
+        containerEl.removeChild(containerEl.firstChild);
+      }
+    let size = document.getElementById("myText").value;
+    console.log(size);
+    createAllDivs(size);
+}
 
 
-
-createAllDivs(16);

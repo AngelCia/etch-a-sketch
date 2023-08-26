@@ -13,3 +13,8 @@
 .inner:hover{
     background-color: #9577d5;
 }
+
+.container{
+    width: 1000px;
+    height: 1000px;
+}
